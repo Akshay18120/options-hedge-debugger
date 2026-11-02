@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "options-hedge-debugger"
+version = "0.1.0"
+description = "Find and explain European-option hedge failures in reproducible stress scenarios"
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+authors = [{name = "Akshay Vishwakarma"}]
+dependencies = []
+
+[project.scripts]
+hedge-debugger = "hedge_debugger.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hedge_debugger = ["data/*.csv", "data/*.json"]
