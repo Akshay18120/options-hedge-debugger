@@ -1,0 +1,4 @@
+[
+  {"move": -0.2, "iv_shift": 0.2, "shape": "gap", "spread_multiplier": 5, "outage_days": 3},
+  {"move": 0.2, "iv_shift": 0, "shape": "roundtrip", "spread_multiplier": 1, "outage_days": 0}
+]
